@@ -7,6 +7,13 @@
   "engines": {
     "node": ">= 14"
   },
+  "exports": {
+    ".": "./src/index.js",
+    "./node": "./node.js",
+    "./main": "./main.js",
+    "./renderer": "./renderer.js",
+    "./preload": "./preload.js"
+  },
   "scripts": {
     "lint": "eslint '**/*.{js,cjs}' --ignore-pattern '**/dist/*.js' && tsc --noEmit",
     "test": "humile 'src/**/*spec.js'",
